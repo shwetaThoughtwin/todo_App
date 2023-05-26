@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from './header'
-import {Form} from './form'
-import {TodoList} from './todoList'
-
-export const App = () => {
+import {Header} from '../component'
+import {Form , TodoList} from '../container'
+export const Todo = () => {
   return (
     <>
       <Header></Header>
@@ -12,4 +10,3 @@ export const App = () => {
     </>
   )
 }
-

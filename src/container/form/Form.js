@@ -4,8 +4,11 @@ import Container from '@material-ui/core/Container'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid'
-import {addData , editItem} from '../action/action'
 import {useDispatch , useSelector } from 'react-redux'
+
+import {addData , editItem} from '../../redux/action'
+
+
 
 
 const useStyles = makeStyles({

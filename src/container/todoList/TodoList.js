@@ -1,5 +1,5 @@
 import React from 'react'
-import { setData, setEdit , setDelete} from '../action/action'
+
 import {useSelector  , useDispatch} from 'react-redux'
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import ListItem from '@material-ui/core/ListItem';
@@ -11,7 +11,7 @@ import CreateIcon from '@material-ui/icons/Create';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
-
+import { setData, setEdit , setDelete} from '../../redux/action'
 
 const useStyles = makeStyles({
     li: {
@@ -34,10 +34,7 @@ export const TodoList = () => {
     console.log(todotask, "list")
     const dispatch=useDispatch()
     
-    // const update= (val) =>{
-    //   console.log("clicked edit")
-    //     dispatch(setEdit);
-    // }
+  
   return (
      <>
      {todotask.item.map((val)=>{

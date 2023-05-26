@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import {App} from './componant/app';
 import {Provider} from 'react-redux'
-import {legacy_createStore as createStore} from 'redux'
-import { todoReducer} from './reducer/reducer'
 
+import { store } from './redux/store/store';
+import { App } from './app';
+import './index.css';
 
-const store=createStore(todoReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
