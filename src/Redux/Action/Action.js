@@ -13,14 +13,13 @@ const editItem = (text) => {
     console.log("Editing")
     return {
         type: "EDIT_DATA",
-        text:text
+        text: text
     }
 }
 const setEdit = () => {
     console.log("setEdit")
     return {
         type: "SET_EDIT"
-       
     }
 }
 const setData = (data) => {
@@ -30,10 +29,10 @@ const setData = (data) => {
         data: data
     }
 }
-const setDelete=(data)=>{
+const setDelete = (data) => {
     return {
         type: "DELETE_DATA",
         data: data
     }
 }
-export { addData, setEdit, setData , editItem , setDelete}
+export { addData, setEdit, setData, editItem, setDelete }

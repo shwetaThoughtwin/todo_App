@@ -9,17 +9,17 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
 import './list.css'
 
-export const ListItems = ({val, clickHandler , remove}) => {
+export const ListItems = ({ val, editList, removeList }) => {
   return (
     <ListItem >
-    <ListItemIcon className='li'>
-         <CheckCircleIcon color="primary"></CheckCircleIcon>
-         <li>{val}</li>
-         <ListItemSecondaryAction>
-         <CreateIcon className="icon" onClick={clickHandler}> </CreateIcon>
-         <DeleteIcon onClick={remove}> </DeleteIcon>
-         </ListItemSecondaryAction>
-    </ListItemIcon>
-  </ListItem>
+      <ListItemIcon className='li'>
+        <CheckCircleIcon color="primary"></CheckCircleIcon>
+        <li>{val}</li>
+        <ListItemSecondaryAction>
+          <CreateIcon className="icon" onClick={editList}> </CreateIcon>
+          <DeleteIcon onClick={removeList}> </DeleteIcon>
+        </ListItemSecondaryAction>
+      </ListItemIcon>
+    </ListItem>
   )
 }
